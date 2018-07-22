@@ -1,0 +1,78 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+.logo {
+   font-family: 'Pacifico', cursive;
+   font-size: 5rem;
+   font-weight: 400;
+}
+header {
+    height: 100vh;
+    width: auto;
+    padding: 2rem 0;
+    background-image: url(../img/header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: left center;
+}
+.navbar-nav {
+    font-size: 1.6rem;
+    color: rgb(36, 36, 36);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.active {
+    position: relative;
+}
+.active:before {
+    content: '';
+    position: absolute;
+    width: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: .3rem solid rgb(255,96, 51);
+}
+
+
+header .row {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.header-col {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.text-heading {
+    font-size: 6rem;
+    font-weight: 900;
+}
+.text-paragraph {
+    font-size: 1.7rem;
+    color: rgb(38, 38, 38);
+}
+
+.header-col button {
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: rgb(255,96, 51);
+    max-width: 200px;
+    height: 55px;
+} 
+
