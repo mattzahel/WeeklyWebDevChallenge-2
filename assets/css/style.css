@@ -262,6 +262,7 @@ header .row {
     }   
     .services-img {
         padding-left: 1rem;
+        max-width: 300px;
     }
 }
 
