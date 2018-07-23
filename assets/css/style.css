@@ -115,3 +115,67 @@ header .row {
 }
 
 
+/* about section */
+.about {
+    height: 700px;
+    width: 100vw;
+    background-color: #00bfbf;
+}
+
+.about .container {
+    height: 700px;
+}
+
+.about .row {
+    height: 100%;
+}
+
+.about-image {
+    display: flex;
+    align-items: center;
+}
+
+.about-image img{
+    max-width: 56rem;
+    left: -5rem;
+}
+
+.about-text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    color: #fff;
+}
+
+.about-heading {
+    font-size: 9rem;
+    font-weight: 600;
+}
+
+.about-paragraph {
+    font-size: 1.7rem;
+}
+
+@media screen and (max-width: 767px) {
+    
+    .about, .about .container {
+        height: 500px;
+    }
+
+    .about-image {
+        display: none;
+    }
+
+    .about-heading {
+        font-size: 5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: justify;
+        padding: 0 20px;
+        left: -10px;
+    }
+}
