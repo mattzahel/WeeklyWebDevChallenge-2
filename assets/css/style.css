@@ -143,6 +143,7 @@ header .row {
 @media screen and (max-width: 767px) { 
     .about, .about .container {
         height: 50rem;
+        padding-top: 2rem;
     }
     .about-image {
         display: none;
@@ -161,13 +162,13 @@ header .row {
 
 /* services section */
 .services {
-    height: 70rem;
+    height: 79rem;
     width: 100vw;
     background-color: #70bfff;
 }
 
 .services .container {
-    height: 70rem;
+    height: 79rem;
 }
 
 .services .row {
@@ -267,6 +268,11 @@ header .row {
 }
 
 @media screen and (max-width: 767px) {
+
+    .services {
+        height: 70rem;
+    }
+
     .services-img {
         display: none;
     }
@@ -274,6 +280,7 @@ header .row {
         order: 1;
         height: auto;
         padding: 0;
+        margin-top: -10rem;
     }
 
     .services-cards {
@@ -300,10 +307,10 @@ header .row {
 
 @media screen and (max-width: 420px) {
     .services-cards {
-        width: 300px;
+        width: 30rem;
     }
 
     .card-icon {
-        width: 100px;
+        width: 10rem;
     }
 }
