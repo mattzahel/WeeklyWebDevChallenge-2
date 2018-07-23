@@ -26,7 +26,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    background-position: left center;
+    background-position: center;
 }
 
 .navbar-nav {
@@ -76,6 +76,8 @@ header .row {
     color: rgb(38, 38, 38);
     text-align: left;
     margin-top: 15px;
+    max-width: 370px;
+    text-align: justify;
 }
 
 .header-col button {
@@ -93,9 +95,23 @@ header .row {
     background-color: rgb(255, 89, 43);
 }
 
-@media screen and (max-width: 768px) {
+.scroll-icon {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {  
     .active:before {
         display: none;
     }
 }
+
+@media screen and (max-width: 767px) {
+    header {
+        background-position: left;
+    }
+}
+
 
