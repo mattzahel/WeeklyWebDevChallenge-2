@@ -10,6 +10,7 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
+    height: 500vh;
 }
 
 .logo {
@@ -27,6 +28,7 @@ header {
     position: relative;
     background-position: left center;
 }
+
 .navbar-nav {
     font-size: 1.6rem;
     color: rgb(36, 36, 36);
@@ -45,26 +47,35 @@ header {
     border-top: .3rem solid rgb(255,96, 51);
 }
 
+header .container {
+    height: 100%;
+}
 
 header .row {
     height: 100%;
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+    
 }
 
 .header-col {
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-content: center;
 }
 .text-heading {
     font-size: 6rem;
     font-weight: 900;
+    text-align: left;
 }
 .text-paragraph {
     font-size: 1.7rem;
     color: rgb(38, 38, 38);
+    text-align: left;
+    margin-top: 15px;
 }
 
 .header-col button {
@@ -74,5 +85,17 @@ header .row {
     background-color: rgb(255,96, 51);
     max-width: 200px;
     height: 55px;
-} 
+    box-shadow: 2px 2px 10px #999;
+    margin: 15px 0;
+}  
+
+.header-col button:hover {
+    background-color: rgb(255, 89, 43);
+}
+
+@media screen and (max-width: 768px) {
+    .active:before {
+        display: none;
+    }
+}
 
