@@ -514,6 +514,8 @@ header .row {
     }
     .subscribe-heading {
         padding-top: 8rem;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -641,7 +643,7 @@ header .row {
     background-color: #f72b3b;
     box-shadow: 1px 1px 5px #666;
     transition: all .3s ease-in-out;
-    margin-bottom: 14rem;
+    margin-bottom: 10rem;
     margin-top: 1rem;
 }
 
@@ -649,6 +651,11 @@ header .row {
     box-shadow: 2px 2px 5px #666;
     font-weight: 400;
     transform: translate(-1px, -1px);
+}
+
+@media screen and (max-width: 767px) {
+.blog-heading {
+    font-size: 5rem;
 }
 
 @media screen and (max-width: 992px) {
