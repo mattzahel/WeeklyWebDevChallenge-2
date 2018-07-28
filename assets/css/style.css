@@ -42,7 +42,6 @@ header {
     transform: translateX(-50%);
     border-top: .3rem solid rgb(255,96, 51);
 }
-
 header .container {
     height: 100%;
 }
@@ -103,7 +102,6 @@ header .row {
     }
 }
 
-
 /* about section */
 .about {
     height: 70rem;
@@ -139,6 +137,11 @@ header .row {
 .about-paragraph {
     font-size: 1.7rem;
 }
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+    .about-image img{
+        max-width: 100%;
+    }
+}
 @media screen and (max-width: 767px) { 
     .about, .about .container {
         height: 50rem;
@@ -165,17 +168,14 @@ header .row {
     width: 100vw;
     background-color: #70bfff;
 }
-
 .services .container {
     height: 79rem;
 }
-
 .services .row {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-
 .services-right {
     height: 100%;
     display: flex;
@@ -184,7 +184,6 @@ header .row {
     align-items: center;
     align-content: center;
 }
-
 .services-heading {
     width: 100%;
     font-size: 9rem;
@@ -196,22 +195,18 @@ header .row {
     z-index: 2;
     transform: translate(-50%, -50%);
 }
-
 .services-img {
     max-width: 56rem;
     position: relative;
 }
-
 .services-left {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .services-cards {
     width: 40rem;
 }
-
 .service-card {
     width: 100%;
     height: 10rem;
@@ -224,19 +219,15 @@ header .row {
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
-
-
 .service-card:not(:last-child) {
     margin-bottom: 2rem;
 }
-
 .card-text {
     width: 300px;
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
 }
-
 .card-icon {
     height: 100%;
     width: 100px;
@@ -249,12 +240,10 @@ header .row {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
 .service-card:hover {
     box-shadow: 3px 3px 5px #666;
     transform: translate(-1px, -1px);
 }
-
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .services-heading {
         text-align: center;
@@ -265,7 +254,6 @@ header .row {
         max-width: 300px;
     }
 }
-
 @media screen and (max-width: 767px) {
 
     .services {
@@ -303,36 +291,30 @@ header .row {
         text-align: center;
     }
 }
-
 @media screen and (max-width: 420px) {
     .services-cards {
         width: 30rem;
     }
-
     .card-icon {
         width: 10rem;
     }
 }
 
 /* gallery */
-
 .gallery {
     width: 100vw;
     background-color:#ffe92f;
     height: auto;
 }
-
 .gallery .container {
     height: 100%;
 }
-
 .gallery-heading {
     font-size: 9rem;
     font-weight: 600;
     color: rgb(38, 38, 38);
     margin-top: 10rem;
 }
-
 .gallery-paragraph {
     font-size: 1.7rem;
     color: rgb(38, 38, 38);
@@ -340,7 +322,6 @@ header .row {
     text-align: center;
     margin: 30px auto 0px auto;
 }
-
 .grid-row-1 {
     margin-top: 4.5rem;
 }
@@ -348,13 +329,11 @@ header .row {
     transition: all .3s ease-in-out;
     box-shadow: 1px 1px 5px #4b4b4b;
 }
-
 .gallery-card:hover {
     box-shadow: 1px 1px 10px #333;
     transform: translate(-1px, -1px);
     cursor: pointer;
 }
-
 .gallery-1 {
     width: 100%;
     height: 55rem;
@@ -363,18 +342,15 @@ header .row {
     background-repeat: no-repeat;
     background-position: center;
 }
-
 .grid-row-1 .col-lg-4 {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
 }
-
 .gallery-2, .gallery-3 {
     width: 100%;
     height: 26rem;
 }
-
 .gallery-2 {
     background-image: url(../img/grid2.png);
     background-size: cover;
@@ -389,7 +365,6 @@ header .row {
    margin-top: 5rem;
    padding-bottom: 5rem;
 }
-
 .gallery-4 {
     width: 100%;
     height: 40rem;
@@ -397,7 +372,6 @@ header .row {
     background-size: cover;
     background-position: center;
 }
-
 .gallery-5 {
     width: 100%;
     height: 40rem;
@@ -405,35 +379,29 @@ header .row {
     background-size: cover;
     background-position: center;
 }
-
 @media screen and (max-width: 992px) {
     .gallery-2, .gallery-3 {
         height: 40rem;
         margin-top: 3rem;
     }
-
     .gallery-4, .gallery-5 {
         margin-top: 3rem;
     }
-
     .grid-row-2 {
         margin-top: 0;
     }
 }
-
 @media screen and (max-width: 576px) {
     .gallery-card {
         width: 100%;
         height: 20rem;
     }
 }
-
 @media screen and (max-width: 767px) {
     .gallery-heading {
         font-size: 5rem;
     }
 }
-
 .gallery-btn {
     width: 20rem;
     height: 5.5rem;
@@ -445,31 +413,27 @@ header .row {
     transition: all .3s ease-in-out;
     box-shadow: 1px 1px 5px #666;
 }
-
 .gallery-btn:hover {
     box-shadow: 2px 2px 5px #666;
     transform: translate(-1px, -1px);
     font-weight: 400;
 }
-
 /* subscribe */
 .subscribe {
     width: 100vw;
-    height: 50rem;
     background-image: url(../img/fwsub.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left top;
+    padding-bottom: 5rem;
 }
-
 .subscribe-heading {
     font-size: 4rem;
     font-weight: 600;
     color: rgba(38, 38, 38, 255);
-    padding-top: 14.5rem;
+    padding-top: 10rem;
     padding-bottom: 3rem;
 }
-
 .subscribe-paragraph {
     font-size: 1.7rem;
     color: rgba(38, 38, 38, 255);
@@ -477,19 +441,16 @@ header .row {
     text-align: left;
     max-width: 54rem;
 }
-
 .subscribe-input {
     padding: 2.2rem 1.5rem 2.2rem 1.5rem;
     font-size: 1.5rem;
     width: 100%;
     height: 5.5rem;
 }
-
 .input-col {
     padding-top: 2rem;
     padding-left: 0;
 }
-
 .subscribe-btn {
     width: 17rem;
     height: 5.5rem;
@@ -501,13 +462,11 @@ header .row {
     box-shadow: 1px 1px 5px #666;
     transition: all .3s ease-in-out;
 }
-
 .subscribe-btn:hover {
     box-shadow: 2px 2px 5px #666;
     font-weight: 400;
     transform: translate(-1px, -1px);
 }
-
 @media screen and (max-width: 767px) {
     .subscribe .container {
         padding: 0px 3rem;
@@ -525,14 +484,12 @@ header .row {
     height: auto;
     background-color: #b07cf7;
 }
-
 .blog-heading {
     font-size: 9rem;
     font-weight: 600;
     color: #fff;
     padding-top: 10rem;
 }
-
 .blog-paragraph {
     font-size: 1.7rem;
     font-weight: 300;
@@ -544,7 +501,6 @@ header .row {
 .posts {
     padding-bottom: 3rem;
 }
-
 .blog-post {
     width: 100%;
     height: 31rem;
@@ -554,12 +510,10 @@ header .row {
     transition: all .3s ease-in-out;
     position: relative;
 }
-
 .blog-post:hover {
     box-shadow: 1px 1px 10px #333;
     transform: translate(-1px, -1px);
 }
-
 .blog-post--1 {
     background: linear-gradient(transparent, rgba(0, 0, 0, .9)), url(../img/blog1.png);
     background-size: cover;
@@ -581,7 +535,6 @@ header .row {
     background-position: center;
     position: relative;
 }
-
 .post-date {
     width: 6rem;
     height: 6rem;
@@ -597,7 +550,6 @@ header .row {
     justify-content: center;
     line-height: 1;
 }
-
 .date-day {
     font-size: 3.2rem;
     font-weight: 600;
@@ -609,7 +561,6 @@ header .row {
     text-align: center;
     text-transform: uppercase;
 }
-
 .post-info {
     position: absolute;
     bottom: 5%;
@@ -618,20 +569,17 @@ header .row {
     display: flex;
     flex-direction: column;
 }
-
 .post-title {
     font-size: 2rem;
     color: #fff;
     font-weight: 600;
 }
-
 .post-author {
     font-size: 1.3rem;
     font-weight: 300;
     color: #fff;
     margin-top: 1.5rem;
 }
-
 .blog-btn {
     width: 17rem;
     height: 5.5rem;
@@ -646,19 +594,16 @@ header .row {
     margin-bottom: 10rem;
     margin-top: 1rem;
 }
-
 .blog-btn:hover {
     box-shadow: 2px 2px 5px #666;
     font-weight: 400;
     transform: translate(-1px, -1px);
 }
-
 @media screen and (max-width: 767px) {
 .blog-heading {
     font-size: 5rem;
     }
 }
-
 @media screen and (max-width: 992px) {
     .blog-post {
         height: 30rem;
@@ -667,7 +612,6 @@ header .row {
 }
 
 /* contact section */
-
 .contact {
     width: 100vw;
     background-image: url(../img/fwfooter.png);
@@ -675,14 +619,12 @@ header .row {
     background-repeat: no-repeat;
     background-position: 0 -6rem;
 }
-
 .contact-heading {
     font-size: 9rem;
     color: rgba(38, 38, 38, 255);
     font-weight: 600;
     margin-top: 10rem;
 }
-
 .contact-paragraph {
     font-size: 1.7rem;
     color: rgba(38, 38, 38, 255);
@@ -691,7 +633,6 @@ header .row {
     margin: 5rem auto;
     padding: 0;
 }
-
 form {
     width: 50rem;
     margin: 0 auto;
@@ -705,24 +646,20 @@ form {
     padding: 1rem 2rem;
     margin-bottom: 1.5rem;
 }
-
 input[type='number'] {
     appearance: textfield;
     -moz-appearance: textfield;
 }
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     appearance: none;
     -webkit-appearance: none;
 }
-
 .contact textarea {
     height: 25rem;
     resize: none;
     padding: 1rem 2rem;
 }
-
 .contact input, .contact textarea {
     background-color: rgba(124, 222, 221, .5);
     border: none;
@@ -732,47 +669,38 @@ input::-webkit-inner-spin-button {
     transition: all .2s linear;
     position: relative;
 }
-
 .contact input:focus, .contact textarea:focus {
     background-color: #00c4c4;
     border-left: .5rem solid #355b82;
     font-weight: 600;
 }
-
 .contact-info {
     list-style-type: none;
     display: flex;
     flex-direction: column;
 }
-
 .contact-info li {
     display: flex;
     flex-direction: column;
     font-size: 1.7rem;
     color: rgba(38, 38, 38, 255);
 }
-
 .contact-info li:not(:last-child) {
     margin-bottom: 1rem;
 }
-
 .info-title {
     font-weight: 600;
     text-transform: uppercase;
 }
-
 @media screen and (max-width: 1366px) {
     .contact {
         background-size: auto;
     }
 }
-
-
 @media screen and (max-width: 992px) {
     .contact {
         overflow-x: hidden;
     }
-
     .contact .row{
         margin: 0;
         padding: 0;
@@ -786,7 +714,6 @@ input::-webkit-inner-spin-button {
     .contact form textarea {
         height: 15rem;
     }
-
     .contact-info {
         width: 500px;
         margin: 2rem auto;
@@ -796,20 +723,24 @@ input::-webkit-inner-spin-button {
         color: #f3f3f3;
     }
 }
-
 @media screen and (max-width: 767px) {
+    form {
+        width: 100%;
+        margin: 0 auto;
+    }
     .contact-heading {
         font-size: 5rem;
      }
-
      .contact form input,  .contact form textarea{
         width: 30rem;
         margin: 1rem auto;
     }
-
+    .contact form textarea {
+        width: 30rem;
+        margin: 1rem auto;
+    }
     .contact-info {
         width: 30rem;
-
     }
 }
 
@@ -819,15 +750,12 @@ input::-webkit-inner-spin-button {
     width: 100vw;
     background-color: #262626;
 }
-
 .footer .container {
     height: 9rem;
 }
-
 .footer .row {
     height: 100%;
 }
-
 .footer-copyright, .footer-logo, .footer-info {
     display: flex;
     height: 100%;
@@ -835,25 +763,20 @@ input::-webkit-inner-spin-button {
     align-items: center;
     color: rgba(185, 185, 185, 255);
 }
-
 .footer-copyright {
     font-size: 1.6rem;
 }
-
 .footer-logo {
     font-size: 2.5rem;
     font-family: "Pacifico";
 }
-
 .footer-info {
     font-size: 1.5rem; 
 }
-
 .footer-highlight {
     color: #ff2b58;
     padding: 0 .4rem;
 }
-
 @media screen and (max-width: 768px) {
     .footer {
         padding: 2rem 0;
