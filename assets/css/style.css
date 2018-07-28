@@ -656,6 +656,7 @@ header .row {
 @media screen and (max-width: 767px) {
 .blog-heading {
     font-size: 5rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -663,4 +664,77 @@ header .row {
         height: 30rem;
         margin-bottom: 3rem;
     }
+}
+
+/* contact section */
+
+.contact {
+    width: 100vw;
+    background-image: url(../img/fwfooter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -6rem;
+}
+
+.contact-heading {
+    font-size: 9rem;
+    color: rgba(38, 38, 38, 255);
+    font-weight: 600;
+    margin-top: 10rem;
+}
+
+.contact-paragraph {
+    font-size: 1.7rem;
+    color: rgba(38, 38, 38, 255);
+    font-weight: 300;
+    max-width: 35rem;
+    margin: 5rem auto;
+    padding: 0;
+}
+
+form {
+    width: 50rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12rem;
+}
+.contact input {
+    width: 50rem;
+    height: 5rem;
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+}
+
+input[type='number'] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.contact textarea {
+    height: 25rem;
+    resize: none;
+    padding: 1rem 2rem;
+}
+
+.contact input, .contact textarea {
+    background-color: rgba(124, 222, 221, .5);
+    border: none;
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.5rem; 
+    transition: all .2s linear;
+    position: relative;
+}
+
+.contact input:focus, .contact textarea:focus {
+    background-color: #00c4c4;
+    border-left: .5rem solid #355b82;
+    font-weight: 600;
 }
