@@ -738,3 +738,25 @@ input::-webkit-inner-spin-button {
     border-left: .5rem solid #355b82;
     font-weight: 600;
 }
+
+.contact-info {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info li {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7rem;
+    color: rgba(38, 38, 38, 255);
+}
+
+.contact-info li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.info-title {
+    font-weight: 600;
+    text-transform: uppercase;
+}
