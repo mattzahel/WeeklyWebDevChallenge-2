@@ -670,6 +670,7 @@ header .row {
 
 .contact {
     width: 100vw;
+    height: auto;
     background-image: url(../img/fwfooter.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -759,4 +760,35 @@ input::-webkit-inner-spin-button {
 .info-title {
     font-weight: 600;
     text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 992px) {
+    .contact {
+        background-size: auto;
+    }
+    .contact-paragraph {
+        margin: 3rem auto;
+    }
+    .contact form {
+        margin-bottom: 1rem;
+    }
+    .contact form textarea {
+        height: 15rem;
+    }
+
+    .contact-info {
+        width: 500px;
+        margin: 2rem auto;
+        text-align: center;
+    }
+    .info-title, .info-details {
+        color: #f3f3f3;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contact-heading {
+        font-size: 5rem;
+     }
 }
